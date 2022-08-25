@@ -13,7 +13,7 @@
 
  }
 
- td{
+ td,th{
     border: 1px solid black;
     border-collapse:collapse;
     width: 200px;
@@ -28,6 +28,16 @@ text-align: center;
    margin:auto;
     width: 300px;
     height:auto
+ }
+ .relogio{
+    display: block;
+   margin:auto;
+    width: 50px;
+    height:auto
+ }
+ .horario{
+
+    font-weight: bolder;
  }
  
  
@@ -46,20 +56,20 @@ text-align: center;
     <table>
      <thead>
             <tr style="text-align:center;" width="100%">
-            <td> <img src=></td>
-            <td>SEGUNDA</td>
-            <td>TERÇA</td>
-            <td>QUARTA</td>
-            <td>QUINTA</td>
-            <td>SEXTA</td>
-            <td>SÁBADO</td>
-            <td>DOMINGO</td>
+            <th> <img class="relogio" src="./images/horario.png"></th>
+            <th>SEGUNDA</th>
+            <th>TERÇA</th>
+            <th>QUARTA</th>
+            <th>QUINTA</th>
+            <th>SEXTA</th>
+            <th>SÁBADO</th>
+            <th>DOMINGO</th>
         </tr>
     </thead>
     <tbody>
     <tr>
         <tr style="text-align:center;">
-            <td>08:00-12:00</td>
+            <td class="horario">08:00-12:00</td>
             <td></td>
             <td></td>
             <td></td>
@@ -69,11 +79,11 @@ text-align: center;
             <td>Descansar</td>
         </tr>
         <tr style="text-align:center;">
-            <td>12:00 - 13:00</td>
+            <td class="horario" > 12:00 - 13:00</td>
             <td colspan="7">Almoçar</td>
         </tr>
         <tr style="text-align:center;">
-            <td>13:00 - 15:00</td>
+            <td class="horario">13:00 - 15:00</td>
             <td></td>
             <td></td>
             <td></td>
@@ -83,7 +93,7 @@ text-align: center;
             <td rowspan="3" class="center">Descansar</td>
         </tr>
         <tr style="text-align: center;">
-            <td>15:00 - 18:00</td>
+            <td class="horario">15:00 - 18:00</td>
             <td></td>
             <td></td>
             <td></td>
@@ -93,7 +103,7 @@ text-align: center;
             
         </tr>
         <tr style="text-align: center;">
-            <td>18:00 - 22:30</td>
+            <td class="horario">18:00 - 22:30</td>
             <td></td>
             <td></td>
             <td></td>
@@ -103,7 +113,7 @@ text-align: center;
             
         </tr>
         <tr style="text-align: center;">
-            <td>22:30 - 08:00</td>
+            <td class="horario">22:30 - 08:00</td>
             <td colspan="7"></td>
         </tr>
     </tbody>
